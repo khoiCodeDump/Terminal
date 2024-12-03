@@ -1,29 +1,57 @@
-How to run the terminal:
-1. In the terminal, install: 'sudo apt install gcc meson libgtk-3-dev libxml2-dev libgirepository1.0-dev xsltproc'
-2. Then enter in 'sudo apt install glade'
-3. Make sure you are in the correct directory path.
-4. Enter 'make main_compile'
-5. Enter './terminal' 
-6. An external terminal should open with the current directory path printed.
+# Installation
 
-Now you are able to run our shell with the assignment's supported commands:
+1. **Ensure WSL is installed** (if using Windows).
+2. **Clone the repository**:  
+   ```bash
+   git clone https://github.com/khoiCodeDump/Terminal.git
+   ```
+3. **Navigate into the Terminal directory**:  
+   ```bash
+   cd Terminal
+   ```
+4. **Install necessary packages**:  
+   ```bash
+   sudo apt install gcc meson libgtk-3-dev libxml2-dev libgirepository1.0-dev xsltproc
+   ```
+5. **Install Glade**:  
+   ```bash
+   sudo apt install glade
+   ```
+6. **Compile the main program**:  
+   ```bash
+   make main_compile
+   ```
+7. **Run the terminal**:  
+   ```bash
+   ./terminal
+   ```
+8. An external terminal should open with the current directory path printed.
 
-**DISCLAIMER** any key input will be read in sequence and will be passed into the argument. Commands should be typed character for character.
-	-- Only some keys are handled --
-	For example: [command]ls does not read as 'ls' even though that is what is displayed in the shell and will result in error.
+# Supported Commands
 
-*cd <directory name> - will change your directory if it exists under the parent folder. Supports '..'
+> **DISCLAIMER**: Any key input will be read in sequence and will be passed into the argument. Commands should be typed character for character.  
+> **Note**: Only some keys are handled. For example, `[command]ls` does not read as 'ls' even though that is what is displayed in the shell and will result in an error.
 
-*pwd - will display the current working directory.
+- **`cd <directory name>`**  
+  Change your directory if it exists under the parent folder. Supports `..`.
 
-*mkdir <directory name> - will create a new child directory with the given name unless it already exists.
+- **`pwd`**  
+  Display the current working directory.
 
-*rmdir <directory name> - will remove the directory unless it is not empty. Will output an error message if not empty.
+- **`mkdir <directory name>`**  
+  Create a new child directory with the given name unless it already exists.
 
-*ls <directory name>(optional) - will list the contents of specified directory. If no directory is specified, lists contents of current directory.
+- **`rmdir <directory name>`**  
+  Remove the directory unless it is not empty. Will output an error message if not empty.
 
-*cp <file name to be copied> <file name copied to> - will copy the contents of the first listed file to the other.
+- **`ls <directory name>(optional)`**  
+  List the contents of the specified directory. If no directory is specified, lists contents of the current directory.
 
-*exit - will exit the shell.
+- **`cp <file name to be copied> <file name copied to>`**  
+  Copy the contents of the first listed file to the other.
 
-*./<executable name> - this command runs executables and prints the output in the terminal.
+- **`exit`**  
+  Exit the shell.
+
+- **`./<executable name>`**  
+  Run executables and print the output in the terminal.
