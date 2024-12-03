@@ -1,5 +1,5 @@
 README:
-How to run our shell:
+How to run the terminal:
 1. In the terminal, install: 'sudo apt install gcc meson libgtk-3-dev libxml2-dev libgirepository1.0-dev xsltproc'
 2. Then enter in 'sudo apt install glade'
 3. Make sure you are in the correct directory path.
