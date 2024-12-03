@@ -1,0 +1,4 @@
+# Project exclude paths
+/cmake-build-debug/
+CMakeLists.txt
+/README/member_contrib_*.txt

@@ -1,0 +1,13 @@
+1. pwd                       prints current directory
+2. ls			             lists the files in current directory
+3. mkdir testingHere	     creates directory /testingHere
+4. ls 			             should see /testingHere directory in list
+5. cd testingHere            jumps to directory
+6. ls			             should show as empty
+7. cd /			             jumps back to home directory
+8. cp test.txt test1.txt     test.txt copied into new file test1.txt
+9. ls		 	             should see test1.txt
+10. rmdir /                  should result in failure
+11. rmdir testingHere	     should be successful
+12. ls			             should no longer see testingHere directory
+12. exit		             exit
